@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+        <VBox>
+                <Text text="{$this>text}" />
+                <Text text="{$this>text}" />
+                <Text text="{$this>text}" />
+                <Text text="{$this>/text}" />
+                <Button press = "onButtoPress" icon ="sap-icon://accept" type="Accept"/>
+        </VBox>
+        
+</core:FragmentDefinition>

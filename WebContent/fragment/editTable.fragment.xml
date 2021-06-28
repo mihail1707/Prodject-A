@@ -1,0 +1,87 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core"
+	 >
+   <Dialog 
+   		title="{mTable>/ItemName}" >
+		   <VBox>
+		   		<Label text="Контора"/>
+				<Input 
+					type="Number"
+					change="onChangeNameCont"
+					id="nameCont"
+					class='sapUiSmallMarginBegin, sapUiSmallMarginBeginBottom'
+         		   	width="100%"
+					value = "{mTable>/nameContNew}"/>
+
+                <Label text="Тагильцев"/>
+				<Input 
+					type="Number"
+					change="onChangeNameTag"
+					id="nameTag"
+					class='sapUiSmallMarginBegin, sapUiSmallMarginBeginBottom'
+         		   	width="100%"
+					value = "{mTable>/nameTagNew}"/>
+				<!-- <Button icon="sap-icon://cart-2" press="onDeleteTag"/> -->
+
+                <Label text="Комар"/>    
+				<Input 
+					type="Number"
+					change="onChangeNameCom"
+					id="nameCom"
+					class='sapUiSmallMarginBeginsap, UiSmallMarginBeginBottom'
+         		   	width="100%"
+					value = "{mTable>/nameComNew}"/>
+
+                <Label text="Ларин"/>    
+				<Input 
+					type="Number"
+					change="onChangeNameLar"
+					id="nameLar"
+					class='sapUiSmallMarginBegin,sapUiSmallMarginBeginBottom'
+         		   	width="100%"
+					value = "{mTable>/nameLarNew}"	/>
+
+				<Label text="Табаков"/>	
+				<Input 
+					type="Number"
+					change="onChangeNameTab"
+					id="nameTab"
+					class='sapUiSmallMarginBegin, sapUiSmallMarginBeginBottom'
+         		   	width="100%"
+					value = "{mTable>/nameTabNew}"/>
+
+				<Label text="Доценко"/>	
+				<Input 
+					type="Number"
+					change="onChangeNameDos"
+					id="nameDos"
+					class='sapUiSmallMarginBegin, sapUiSmallMarginBeginBottom'
+         		   	width="100%"
+					value = "{mTable>/nameDosNew}"/>
+					
+				<Label text="Ефричёв"/>	
+				<Input
+					type="Number" 
+					change="onChangeNameEfr"
+					id="nameEfr"
+					class='sapUiSmallMarginBegin, sapUiSmallMarginBeginBottom'
+         		   	width="100%"
+					value = "{mTable>/nameEfrtNew}"/>
+
+				<Label text="Петренко"/>	
+				<Input
+					type="Number" 
+					change="onChangeNamePet"
+					id="namePet"
+					class='sapUiSmallMarginBegin, sapUiSmallMarginBeginBottom'
+         		   	width="100%"
+					value = "{mTable>/namePetNew}"/>
+			</VBox>
+			
+			<Button press="onSaveEditTable" text="да"/>
+			<Button press="onCloseEditTable" text="нет"/>
+			
+	</Dialog>
+	
+</core:FragmentDefinition>

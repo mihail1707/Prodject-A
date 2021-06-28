@@ -1,0 +1,244 @@
+<core:View
+ controllerName="test.controller.first"
+ displayBlock="true"
+ xmlns="sap.m"
+ xmlns:core="sap.ui.core"
+ xmlns:mvc="sap.ui.core.mvc"
+ xmlns:test='test.fragment'>
+    <Page title="Welcome to Test" class="gradien">
+		<content>
+			<VBox 
+				alignItems = "Center"
+				justifyContent = "SpaceAround">
+				
+				<test:test/>
+
+				<Image src = ""/>
+				<Text text="{/Timer}" id ="idTimer" class = "butt transparent-text" />
+				<core:Icon src="sap-icon://arobase" class = "butt" press="onBattery"/>
+				<HBox class="Box1" id="idBox1">
+					<HBox class="BoxLevel BoxAnimation">
+					</HBox>
+					<VBox class="Box3" justifyContent="End" alignItems="Center">
+						<Text text="0%" class="Num sapUiMediumMarginBottom striped-textP" />
+					</VBox>
+				</HBox>
+				<Text text="Инф батарея" id="idtext" class="batteryText striped-shadow"/>
+				<Text text="Сколько времени до полной зарядки" class="batteryTime gradient-all"/>
+				<Text text="Сколько времени держит зарядка" class="batteryTimeDis text-shadow-8"/>
+					
+				<Button
+					id="idbutt1"
+					class = "butt"
+					press = "onFFF"
+					icon = "sap-icon://approvals"
+					width = "200px"
+					text = "FFF"/>
+					
+				<Button
+					class="gradien"
+					press = "onPromises"
+					icon = "sap-icon://approvals"
+					width = "200px"
+					text = "Promises"/>
+					
+				<Button
+					class = "butt"
+					press = "onGoods"
+					icon = "sap-icon://approvals"
+					width = "200px"
+					text = "Goods"/>
+					
+				<Button
+					press = "onApple"
+					icon = "sap-icon://approvals"
+					width = "200px"
+					text = "Apple"/>
+				<Button
+					press = "onMale"
+					icon = "sap-icon://approvals"
+					width = "200px"
+					text = "Male"/>
+				<Button
+					press = "onGun"
+					icon = "sap-icon://approvals"
+					width = "200px"
+					text = "Gun"/>
+				<Button
+					press = "onTest"
+					icon = "sap-icon://approvals"
+					width = "200px"
+					text = "Test"/>
+				<DatePicker 
+				displayFormat="MM/dd/yy" class = "butt"/>
+				<Input 
+					class = "butt gradient"
+					id="idInput1"
+					width = "100%"/>
+				<Input 
+					id="idInput2"
+					width = "100%"/>
+				<Input 
+					value="{}"
+					width = "100%"/>
+				<Label text = "Ввести"/>
+				<Input 
+					value="{/NumRub}"
+					width = "100%"/>
+				<Input 
+					value="{/DollNew}"
+					width = "100%"/>	 
+				<Select
+					change="onChangeSelect"
+					forceSelection="false"
+					selectedKey="{/SelectedProduct}"
+					items="{
+						path: '/',
+						sorter: { path: 'Name' }
+					}">
+					
+					<core:Item key="{ProductId}" text="{Name}" />
+				</Select>
+				<Button
+					press = "onTest2"
+					icon = "sap-icon://approvals"
+					width = "200px"
+					text = "Test"/>
+				<Button
+					press = "onArr"
+					icon = "sap-icon://approvals"
+					width = "200px"
+					text = "arr"/>
+				<Button
+					press = "onNumber"
+					width = "200px"
+					text = "arr"/>
+				<Button
+					press = "onDollor"
+					width = "200px"
+					text = "$"/>
+				<Button
+					press = "onRub"
+					width = "200px"
+					text = "Rub"/>
+				<Button
+					press = "onDeleteSelected"
+					width = "200px"
+					text = "Delete Selected"/>
+				<Button
+					press = "onReduce"
+					width = "200px"
+					text = "onReduce"/>
+				<Button
+					id= "idButtonTest1"
+					press = "onCall"
+					width = "200px"
+					text = "Call"/>
+				<Button
+					id= "idButtonTest2"
+					press = "onCall2"
+					width = "200px"
+					text = "Call2"/>
+				<Input 
+					change="onChangeIn"
+					type="Number"
+					id="id1"
+					value="{/inp1}"
+					width = "100%"/>
+				<Input 
+					change="onChangeIn"
+					type="Number"
+					id="id2"
+					value="{/inp2}"
+					width = "100%"/>
+
+				<Label text="res"/>
+				<Button
+					press = "onTransfer"
+					width = "200px"
+					text = "Transfer"/>
+				<Input 
+					
+					id="id1re"
+					value="{/ValueNum}"
+					width = "100%"/>
+				<Input 
+					
+					id="id2re"
+					value="{/ValueResult}"
+					width = "100%"/>
+				<Button
+					press = "onTAll"
+					width = "200px"
+					text = "1111"/>
+				<Input 
+					value="{/setTime}"
+					width = "100%"/>
+				<!-- <Input value = "{/Timer}" id ="idTimer"/> -->
+			</VBox>	
+			<Button
+					press = "onF"
+					width = "200px"
+					text = "onF"/>
+			<Table 
+				id="idProductsTable"
+				class="tableStyle sapUiMediumMarginTop butt red" 
+				items="{mTable>/}" 
+				itemPress='.onTable'>
+            	<columns >
+					<Column >
+                		<Label text="ФИО кому должны =>" class="gradient-all"/>
+              		</Column>
+					<Column>
+                		<Label text="Один" class="gradient-all"/>
+              		</Column>
+					  <Column>
+                		<Label text="Два"  class="gradient-all"/>
+              		</Column>
+              		<Column>
+                		<Label text="Три" class="gradient-all"/>
+              		</Column>
+              		
+              		<Column>
+                		<Label text="Четыре" class="gradient-all"/>
+              		</Column>
+			  		<Column>
+                		<Label text="Пятый" class="gradient-all"/>
+              		</Column>
+					  <Column>
+                		<Label text="Шесть" class="gradient-all"/>
+              		</Column>
+					  <Column>
+                		<Label text="Семь" class="gradient-all"/>
+              		</Column>
+					  <Column>
+                		<Label text="Восемь" class="gradient-all"/>
+              		</Column>
+              	</columns>
+              	<items>
+                	<ColumnListItem type="Active" selected="{mTable>selected}" press="onItemPress">
+                  		<cells >
+                    		<Text text="{mTable>name}"/>
+							<Text text="{mTable>nameCont}" />
+							<Text text="{mTable>nameTag}" />
+                    		<Text text="{mTable>nameCom}" />
+							<Text text="{mTable>nameLar}" />
+							<Text text="{mTable>nameTab}" />
+							<Text text="{mTable>nameDos}" />
+							<Text text="{mTable>nameEfr}" />
+							<Text text="{mTable>namePet}" />
+                  		</cells>
+						<customData>
+							<core:CustomData
+								key="colorRed"
+								value="true"
+								writeToDom="true" />
+						</customData>
+                	</ColumnListItem>
+              	</items>			 
+          	</Table>
+		</content>
+
+		
+	</Page>
+</core:View>

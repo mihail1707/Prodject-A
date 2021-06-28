@@ -1,0 +1,160 @@
+/* .butt{
+    color: red;
+    background-color: blue;
+} */
+.red[data-colorRed = true] {
+    background: red !important
+}
+.Box1{
+    border: 1px solid gray;
+    width: 300px;
+    height: 90px;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    background: white;
+}
+.Box1::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 40px;
+    background: white;
+    position: absolute;
+    top: 22px;
+    right: -22px;
+    border: 1px solid gray;
+    border-left-color: white;
+    border-radius: 0 4px 4px 0;
+}
+.BoxLevel{
+    height: 100%;
+    width: 10%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(9,74,158,1) 50%);
+    transition: all ease 1s;
+}
+.Num{
+    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+    font-size: 70px;
+    line-height: 92px;
+}
+.BoxLevel.BoxAnimation{
+    animation-name: box-charget;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes box-charget{
+    0%{
+        width: 10%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.Box3{
+    position: absolute;
+    width: 100%;
+    margin-bottom: -100px;
+}
+.batteryText{
+    
+}
+.batteryTime{
+    
+}
+.batteryTimeDis{
+    
+}
+.gradien{
+    background: rgb(131,39,210);
+background: linear-gradient(90deg, rgba(131,39,210,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.gradient-text {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: -15px auto;
+}
+.striped-textP{
+    font-family: 'Rubik One', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    background: repeating-linear-gradient(white, white 2px, #7AB4E2 2px, #7AB4E2 3px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #183D58;
+    display: table;
+    margin: -15px auto;    
+}
+.transparent-text {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    background: #2E2F45;
+    display: table;
+    margin: 20px auto;
+    color: white;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+}
+.striped-shadow {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: -4px -4px 0px #D2EAD7;
+    background: repeating-linear-gradient(45deg, #6EB495, #6EB495 1px, white 2px, white 3px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    margin: 20px auto;
+}
+.gradient-all {
+    font-size: 2em;
+    background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 0.3em 0.6em ;
+    /* border: 3px solid transparent; */
+    border-image: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    border-image-slice: 1;
+}
+.gradient-border {
+    padding: 20px;
+    letter-spacing: 0.2em;
+    border: 1px solid;
+    border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+    border-image-slice: 1;
+}
+.div {
+    width: 260px; height: 100px; 
+    border-style: solid;
+    border-image-width: 15px;
+    border-image-source: url(border_round.png);
+    border-image-slice: 30;
+    border-image-repeat: stretch;
+}
+.gradient {
+    height: 150px; 
+    width: 50%; 
+    margin: 0 auto;
+    border: 10px solid transparent;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+}
+.text-shadow-8 {
+    background: black;
+    color: white;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+}
